@@ -18,7 +18,7 @@ function Introtext() {
     return (
       <div>
         <H1>New Year countdown</H1>
-        <P>2024 is almost there,, but you still have to wait:</P>
+        <P>2025 is almost there,, but you still have to wait:</P>
       </div>
     );
   }
