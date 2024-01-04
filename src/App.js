@@ -5,8 +5,6 @@ import React, { useState, useEffect } from "react";
 import Clock from "./Components/Clock";
 import Introtext from "./Components/Introtext";
 import Nextsteps from "./Components/Nextsteps";
-import DatePicker from 'react-datepicker'
-import 'react-datepicker/dist/react-datepicker.css'
 
 function App() {
   const [timerDays, setTimerDays] = useState();
@@ -49,7 +47,7 @@ function App() {
   return (
     <div className="App">
 		<Introtext />
-    <DatePicker />
+    
       <Clock
         timerDays={timerDays}
         timerHours={timerHours}
