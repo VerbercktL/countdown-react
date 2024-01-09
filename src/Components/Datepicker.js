@@ -10,10 +10,10 @@ font-family:Arial;`
 
 
 function Datepicker() {
-    const [countDownDate, setDate] = useState(new Date());
+    const [date, setDate] = useState(new Date());
     return (
       <DIV>
-        <DatePicker selected={countDownDate} onChange={(countDownDate) => setDate(countDownDate)} />
+        <DatePicker selected={date} onChange={(date) => setDate(date)} />
       </DIV>
     );
   }
