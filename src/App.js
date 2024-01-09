@@ -4,8 +4,6 @@ import React, { useState, useEffect } from "react";
 
 import Clock from "./Components/Clock";
 import Introtext from "./Components/Introtext";
-import Nextsteps from "./Components/Nextsteps";
-
 function App() {
   const [timerDays, setTimerDays] = useState();
   const [timerHours, setTimerHours] = useState();
@@ -54,7 +52,6 @@ function App() {
         timerMinutes={timerMinutes}
         timerSeconds={timerSeconds}
       />
-    <Nextsteps />
     </div>
   );
 }
