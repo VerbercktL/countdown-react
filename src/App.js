@@ -1,16 +1,14 @@
-
-
 import React, { useState, useEffect } from "react";
 
 import Clock from "./Components/Clock";
-import Introtext from "./Components/Introtext";
+import IntroText from "./Components/IntroText";
 function App() {
   const [timerDays, setTimerDays] = useState();
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
   let interval;
-  
+
   const startTimer = () => {
     const countDownDate = new Date("January 01,2025 ").getTime();
 
@@ -37,15 +35,15 @@ function App() {
       }
     });
   };
-  
+
   useEffect(() => {
     startTimer();
   });
 
   return (
     <div className="App">
-		<Introtext />
-    
+      <IntroText />
+
       <Clock
         timerDays={timerDays}
         timerHours={timerHours}
