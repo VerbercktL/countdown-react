@@ -26,9 +26,9 @@ font-size: 50px;`
 
 const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }) => {
   return (
-      <section className="timer-container">
-        <section className="timer">
-          <DIV className="clock">
+      <section>
+        <section>
+          <DIV>
             <SECTION>
               <p>{timerDays}</p>
               <small>Days</small>
