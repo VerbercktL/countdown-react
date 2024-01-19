@@ -14,6 +14,19 @@ text-align:center;
 font-family:Arial;
 font-size: 2rem;`
 
+const LABEL = styled.label`
+display: block;
+text-align:center;
+font-family:Arial;
+font-size: 1.5rem;`
+
+const BUTTON = styled.button`
+display: block;
+text-align:center;
+font-family:Arial;
+font-size: 1rem;
+margin:auto`
+
 function Introtext() {
   const [inputs, setInputs] = useState({});
   const [EventText, setEventText] = useState("Your Event"); 
@@ -45,14 +58,14 @@ function Introtext() {
         <H1>Countdown</H1>
         <P>Fill in the form to start your countdown timer to {EventText}</P>
         <form onSubmit={handleSubmit}>
-      <label>the name of your timer:
+      <LABEL>the name of your timer:
       <input 
         type="text" 
         name="name" 
         value={inputs.name || ""} 
         onChange={handleNameChange}
       />
-      </label>
+      </LABEL>
       {/*<<label>Day:
         <input 
           type="number" 
@@ -77,7 +90,7 @@ function Introtext() {
           onChange={handleChange}
         />
     </label>*/}
-        <button onClick={() => setEventText(inputs.name)}>Start</button>
+        <BUTTON onClick={() => setEventText(inputs.name)}>Start</BUTTON>
     </form>
       </div>
     );
