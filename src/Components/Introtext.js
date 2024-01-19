@@ -53,7 +53,7 @@ function Introtext() {
         onChange={handleNameChange}
       />
       </label>
-      <label>Day:
+      {/*<<label>Day:
         <input 
           type="number" 
           name="day" 
@@ -76,7 +76,7 @@ function Introtext() {
           value={inputs.year || ""} 
           onChange={handleChange}
         />
-    </label>
+    </label>*/}
         <button onClick={() => setEventText(inputs.name)}>Start</button>
     </form>
       </div>
